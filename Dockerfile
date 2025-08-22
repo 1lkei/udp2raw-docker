@@ -3,7 +3,7 @@ FROM debian
 ARG VERSION
 
 RUN apt-get update && \
-    apt-get install -y curl iptables nftables \
+    apt-get install -y curl iptables nftables && \
     cd /tmp && \
     curl -L -o udp2raw.tar.gz https://github.com/wangyu-/udp2raw/releases/download/$VERSION/udp2raw_binaries.tar.gz && \
     tar -xf udp2raw.tar.gz && \
