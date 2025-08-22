@@ -51,8 +51,8 @@ jobs:
           # load: true
           provenance: false
           tags: |
-            1lkei/peazip:${{ env.latest_version }}
-            1lkei/peazip:latest
+            1lkei/udp2raw:${{ env.latest_version }}
+            1lkei/udp2raw:latest
           build-args: |
             VERSION=${{ env.latest_version }}
           platforms: linux/amd64,linux/arm64
