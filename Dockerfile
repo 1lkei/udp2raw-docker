@@ -17,6 +17,6 @@ RUN apt-get update && \
     /var/tmp/* \
     /tmp/*
 
-WORKDIR /opt
+WORKDIR /opt/udp2raw
 
 CMD [ "echo","HELLO WORLD" ]
